@@ -1,9 +1,9 @@
-import {createStore, applyMiddleware} from "redux";
+import { createStore, applyMiddleware } from 'redux';
 
-import thunk from "redux-thunk";
-import {composeWithDevTools} from "redux-devtools-extension";
-import logger from "redux-logger";
-import reducers from "./rootReducer";
+import thunk from 'redux-thunk';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import logger from 'redux-logger';
+import reducers from './rootReducer';
 
 const middleware = [thunk];
 
@@ -14,12 +14,12 @@ const composeEnhacers = composeWithDevTools({
   traceLimit: 25,
 });
 
-if (process.env.NODE_ENV !== "production") {
+if (process.env.NODE_ENV !== 'production') {
   middleware.push(logger);
 }
 
 const store =
-  process.env.NODE_ENV !== "production"
+  process.env.NODE_ENV !== 'production'
     ? createStore(reducers, preloadedState, composeEnhacers(applyMiddleware(...middleware)))
     : createStore(reducers, applyMiddleware(...middleware));
 

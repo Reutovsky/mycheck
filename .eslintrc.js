@@ -3,10 +3,10 @@ const path = require('path');
 module.exports = {
   extends: ['airbnb', 'prettier'],
   parser: 'babel-eslint',
-  'parserOptions': {
-    'sourceType': 'module',
-    'allowImportExportEverywhere': false,
-    'codeFrame': false
+  parserOptions: {
+    sourceType: 'module',
+    allowImportExportEverywhere: false,
+    codeFrame: false,
   },
   plugins: ['prettier', 'import', 'flowtype', 'jsx-a11y', 'react', 'react-hooks'],
   env: {
@@ -46,6 +46,7 @@ module.exports = {
     'jsx-a11y/no-autofocus': 0,
     'jsx-a11y/no-noninteractive-element-interactions': 0,
     'jsx-a11y/no-static-element-interactions': 0,
+    quotes: ['single'],
     'jsx-quotes': 0,
     'no-console': 0,
     'no-multi-spaces': [2, { exceptions: { ImportDeclaration: true, VariableDeclarator: true } }],

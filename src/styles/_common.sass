@@ -1,0 +1,156 @@
+*, html, body
+  font-family: 'Roboto', sans-serif
+  box-sizing: border-box
+
+html, body
+  min-height: 100vh
+
+ul
+  padding: 0
+  margin: 0
+  display: inline-block
+  & > li
+    list-style-type: none
+    display: inline-block
+    margin-right: 20px
+  & > :last-child
+    margin-right: 80px
+
+.wrapper
+  display: block
+
+.container
+  width: 1200px
+  margin: 0 auto
+
+.header
+  background: rgb(232,222,255)
+  background: linear-gradient(180deg, rgba(232,222,255,1) 0%, rgba(232,222,255,1) 35%, rgba(222,240,255,1) 84%, rgba(222,240,255,1) 93%, rgba(222,240,255,1) 100%)
+  height: 500px
+  nim-height: 500px
+  width: 100%
+  border-bottom-left-radius: 20%
+  border-bottom-right-radius: 20%
+  border: none
+  &__block
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    justify-content: space-between
+    padding: 0
+  &__logo-image
+    background-image: url('../assets/images/mycheck-logo.png')
+    background-size: 100%
+    background-position: center center
+    width: 200px
+    height: 100px
+    min-height: 100px
+
+.button
+  background: #0e9bc9
+  padding: 12px 22px
+  border-radius: 6px
+  border: none
+  font-size: 14px
+  font-weight: 500
+  color: white
+  cursor: pointer
+  transition: background-color 0.2s
+  outline: none
+  &:hover
+    background-color: #30a0fc
+  &.secondary
+    background: #eee
+    color: black
+    margin-left: 20px
+    &:hover
+      background: #fff
+
+.header__row
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+  align-items: center
+  align-content: stretch
+
+.header__column-block
+  max-width: 45%
+  min-width: 45%
+  width: 45%
+  margin-top: 100px
+
+.header__title-maintext
+  font-size: 38px
+  line-height: 52px
+  font-weight: 700
+  color: #005875
+  margin: 0
+
+.header__title-subtext
+  font-size: 24px
+  line-height: 36px
+  font-weight: 300
+  color: #005875
+  margin-top: 14px
+
+.header__details
+  background: #fff
+  border: none
+  padding: 30px 30px 30px 30px
+  border-radius: 10px
+  width: 100%
+  min-width: 100%
+  box-shadow: 0 2.8px 2.2px rgba(25, 25, 25, 0.134)
+
+.header__details-header
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  justify-content: flex-start
+  margin-bottom: 20px
+
+.header__details-header-timewrapper
+  width: 20px
+  height: 20px
+
+.header__details-header-textwrapper
+  font-size: 16px
+  line-height: 22px
+  font-weight: 700
+  padding-left: 10px
+
+.header__details-stats
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+  align-content: stretch
+
+.header__details-stats-block
+  border: none
+  border-radius: 10px
+  padding: 14px
+  box-shadow: 0 0px 6px rgba(25, 25, 25, 0.15)
+  width: 30%
+
+.header__details-stats-title
+  font-weight: 700
+  font-size: 20px
+  line-height: 28px
+  &.purple
+    color: #871fff
+  &.green
+    color: #089900
+  &.pink
+    color: #ff4a5f
+
+.header__details-stats-subtitle
+  font-size: 14px
+  line-height: 22px
+  font-weight: 300
+
+.header__details-footer
+  display: flex
+  flex-flow: row nowrap
+  justify-content: flex-start
+  align-items: center
+  margin-top: 20px
