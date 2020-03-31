@@ -1,8 +1,8 @@
 .header
   background: rgb(232,222,255)
   background: linear-gradient(180deg, rgba(232,222,255,1) 0%, rgba(232,222,255,1) 35%, rgba(222,240,255,1) 84%, rgba(222,240,255,1) 93%, rgba(222,240,255,1) 100%)
-  height: 500px
-  nim-height: 500px
+  height: 650px
+  nim-height: 650px
   width: 100%
   border-bottom-left-radius: 20%
   border-bottom-right-radius: 20%
@@ -27,12 +27,13 @@
   justify-content: space-between
   align-items: center
   align-content: stretch
+  margin-bottom: 100px
 
 .header__column-block
   max-width: 45%
   min-width: 45%
   width: 45%
-  margin-top: 100px
+  margin-top: 80px
 
 .header__title-maintext
   font-size: 38px
@@ -55,7 +56,8 @@
   border-radius: 10px
   width: 100%
   min-width: 100%
-  box-shadow: 0 2.8px 2.2px rgba(25, 25, 25, 0.134)
+  box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.75)
+  position: relative
 
 .header__details-header
   display: flex
@@ -79,12 +81,13 @@
   flex-flow: row nowrap
   justify-content: space-between
   align-content: stretch
+  margin: 30px 0
 
 .header__details-stats-block
   border: none
   border-radius: 10px
   padding: 14px
-  box-shadow: 0 0px 6px rgba(25, 25, 25, 0.15)
+  box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.75)
   width: 30%
 
 .header__details-stats-title
@@ -109,3 +112,20 @@
   justify-content: flex-start
   align-items: center
   margin-top: 20px
+
+.header__icon
+  width: 50px
+  height: 50px
+  position: absolute
+  z-index: 900
+  box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75)
+  border-radius: 50%
+  &-telegram
+    left: -45px
+    top: 50px
+  &-whatsapp
+    top: -25px
+    right: 100px
+  &-mail
+    top: 210px
+    right: 50px

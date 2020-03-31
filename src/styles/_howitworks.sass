@@ -1,0 +1,54 @@
+section.howitworks
+  background: rgb(232,222,255)
+  background: linear-gradient(0deg, rgba(232,222,255,1) 0%, rgba(232,222,255,1) 35%, rgba(222,240,255,1) 84%, rgba(222,240,255,1) 93%, rgba(222,240,255,1) 100%)
+  min-height: 650px
+  width: 100%
+  border-top-left-radius: 20%
+  border-top-right-radius: 20%
+  border-bottom-left-radius: 20%
+  border-bottom-right-radius: 20%
+  border: none
+  padding-bottom: 100px
+
+.howitworks-wrapper
+  padding-top: 100px
+  width: 1200px
+
+.howitworks-flex
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+  align-content: stretch
+
+.howitworks-block
+  display: flex
+  flex-flow: column nowrap
+  justify-content: flex-start
+  align-items: center
+  @extend %borderblock
+  &:nth-child(4), &:nth-child(5), &:nth-child(6)
+    margin-top: 50px
+
+.howitworks-icon
+  width: 100px
+  height: 100px
+  padding: 10px
+
+.howitworks-block-text
+  font-weight: $light
+  font-size: 16px
+  line-height: 22px
+  margin: 10px 0
+
+.howitworks-icon-social
+  width: 20px
+  height: 20px
+  margin-left: 10px
+  display: block
+  cursor: pointer
+
+.howitworks-social-row
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  justify-content: flex-start

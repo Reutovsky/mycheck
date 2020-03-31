@@ -1,0 +1,49 @@
+// BUTTONS
+$primary-button: #0e9bc9
+$primary-button-hover: #30a0fc
+$secondary-button: #eee
+$secondary-button-hover: #e1e1e1
+
+// FONTS
+$bold: 700
+$medium: 500
+$regular: 400
+$light: 300
+$extralight: 100
+
+// TEXT
+$main-text: rgba(0, 0, 0, 0.84)
+$secondary-text: rgba(0, 0, 0, 0.54)
+
+// BLOCK
+%borderblock
+  background: #ffffff
+  border: none
+  border-radius: 15px
+  padding: 20px 30px
+  box-shadow: 0px 0px 12px -7px rgba(0,0,0,0.75)
+  width: 350px
+  transition: box-shadow 0.3s
+  &:hover
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.25)
+
+// FLEX
+%flexrowcenter
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  justify-content: center
+
+%button-sale
+  background: $primary-button
+  padding: 20px 26px
+  border-radius: 6px
+  border: none
+  font-size: 18px
+  font-weight: 400
+  color: white
+  cursor: pointer
+  transition: background-color 0.2s
+  outline: none
+  &:hover
+    background-color: $primary-button-hover

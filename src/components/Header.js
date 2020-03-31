@@ -1,8 +1,7 @@
 import React from 'react';
 import { Button } from '../components/common/Button';
-import clock from '../assets/icons/svg/clock.svg';
-import Fade from 'react-reveal/Fade';
-import HeadShake from 'react-reveal/HeadShake';
+import { Tagline } from './Tagline';
+import { Details } from './Details';
 
 const NAV_LINKS = [
   { text: 'Функции', id: 1, href: '/' },
@@ -20,7 +19,7 @@ const Header = () => {
           <div className="header__logo">
             <div className="header__logo-image"></div>
           </div>
-          <div className="header__navlinks">
+          <div className="header__navlinks maintext">
             <ul>
               {NAV_LINKS.map((l) => (
                 <li key={l.id}>{l.text}</li>
@@ -31,47 +30,10 @@ const Header = () => {
         </div>
         <div className="header__row">
           <div className="header__column-block">
-            <HeadShake>
-              <p className="header__title-maintext">Оперативно сообщим,</p>
-            </HeadShake>
-            <p className="header__title-subtext">
-              если мошенники зарегистрировали на Вас фирму-однодневку и повесили
-              долги
-            </p>
+            <Tagline />
           </div>
           <div className="header__column-block">
-            <Fade>
-              <div className="header__details">
-                <div className="header__details-header">
-                  <div className="header__details-header-timewrapper">
-                    <img src={clock} style={{ width: 20, height: 20 }} />
-                  </div>
-                  <div className="header__details-header-textwrapper">
-                    Итоги работы
-                  </div>
-                </div>
-                <div className="header__details-stats">
-                  <div className="header__details-stats-block">
-                    <div className="header__details-stats-title purple">40,596</div>
-                    <div className="header__details-stats-subtitle">
-                      Нам доверяют
-                    </div>
-                  </div>
-                  <div className="header__details-stats-block">
-                    <div className="header__details-stats-title green">5,596</div>
-                    <div className="header__details-stats-subtitle">Оповестили</div>
-                  </div>
-                  <div className="header__details-stats-block">
-                    <div className="header__details-stats-title pink">900,450 $</div>
-                    <div className="header__details-stats-subtitle">Сэкономили</div>
-                  </div>
-                </div>
-                <div className="header__details-footer">
-                  <Button text="Первая кнопка" />
-                  <Button text="Вторая" secondary={true} />
-                </div>
-              </div>
-            </Fade>
+            <Details />
           </div>
         </div>
       </div>

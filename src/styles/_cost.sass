@@ -1,0 +1,86 @@
+.cost
+  padding: 100px
+  position: relative
+
+.cost-title-wrapper
+  display: flex
+  justify-content: center
+  position: relative
+
+.cost-wrapper-quality
+  position: absolute
+  top: -320px
+  left: 100px
+  right: 0
+  bottom: 0
+  background: url('../assets/icons/svg/quality.svg')
+  background-repeat: no-repeat
+  background-position: left center
+  background-size: 22%
+  z-index: 10
+  opacity: 0.4
+
+.cost-wrapper-diamond
+  position: absolute
+  top: 320px
+  left: 0
+  bottom: 0
+  right: 100px
+  background: url('../assets/icons/svg/diamond.svg')
+  background-repeat: no-repeat
+  background-position: right center
+  background-size: 20%
+  z-index: 10
+  opacity: 0.4
+
+.cost-title
+  font-size: 30px
+  line-height: 40px
+  margin: 100px 0
+  font-weight: 700
+  z-index: 20
+
+.cost-row
+  display: flex
+  flex-flow: row wrap
+  justify-content: center
+  align-content: stretch
+
+.cost-block
+  margin: 0 80px
+  position: relative
+  @extend %borderblock
+
+.cost-subtext
+  color: red
+  font-weight: 300
+  font-size: 14px
+  position: absolute
+  top: 120px
+  left: 97px
+
+.cost-subtitle
+  font-size: 26px
+  animation: shake 0.7s infinite
+  animation-direction: alternate
+  @extend %flexrowcenter
+
+@keyframes shake
+  0%
+    transform: translateX(10px)
+  100%
+    transform: translateX(0px)
+
+.cost-text
+  font-size: 22px
+  @extend %flexrowcenter
+
+.cost-button-wrapper
+  padding: 120px
+  position: relative
+  z-index: 100
+  @extend %flexrowcenter
+
+.cost__button
+  z-index: 100
+  @extend %button-sale
