@@ -30,3 +30,49 @@ main
   line-height: 40px
   margin: 100px 0
   font-weight: $bold
+
+.header__loggedin-wrapper
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  justify-content: flex-end
+  background: #fff
+  border: none
+  border-radius: 5px
+  padding: 5px 10px
+  position: relative
+
+.header__logout-wrapper
+  position: absolute
+  top: 40px
+  left: 0
+  right: 0
+  padding: 10px 30px 10px
+  font-size: 14px
+  line-height: 20px
+  font-weight: 400
+  color: black
+  cursor: pointer
+  background: url('../assets/icons/svg/exit.svg')
+  background-position: right center
+  background-repeat: no-repeat
+  background-size: 20px 20px
+  display: flex
+  align-items: center
+  flex-flow: row nowrap
+  justify-content: flex-end
+
+.header__username
+  font-size: 14px
+  line-height: 20px
+  font-weight: 400
+  color: black
+  margin: 0 10px
+
+.header__avatar
+  width: 30px
+  height: 30px
+  background: url('../assets/icons/svg/user.svg')
+  background-position: center center
+  background-repeat: no-repeat
+  cursor: pointer
