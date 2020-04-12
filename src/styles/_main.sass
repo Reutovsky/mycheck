@@ -42,25 +42,53 @@ main
   padding: 5px 10px
   position: relative
 
-.header__logout-wrapper
+.header__dropdown-wrapper
   position: absolute
-  top: 40px
+  top: 37px
   left: 0
   right: 0
-  padding: 10px 30px 10px
+  display: flex
+  flex-flow: column nowrap
+  background: #fff
+  padding: 15px 10px
+  border: none
+  border-bottom-left-radius: 5px
+  border-bottom-right-radius: 5px
+  // align-items: flex-start
+  // justify-content: flex-start
+
+.header__dropdown-row
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  justify-content: flex-end
+  cursor: pointer
+  &:last-child
+    margin-top: 10px
+
+.header__dropdown-text
   font-size: 14px
   line-height: 20px
   font-weight: 400
   color: black
-  cursor: pointer
+  margin: 0px 10px 0px 0px
+  padding: 0
+
+.header__dropdown-icon-logout
+  width: 20px
+  height: 20px
   background: url('../assets/icons/svg/exit.svg')
-  background-position: right center
+  background-position: center center
   background-repeat: no-repeat
   background-size: 20px 20px
-  display: flex
-  align-items: center
-  flex-flow: row nowrap
-  justify-content: flex-end
+
+.header__dropdown-icon-settings
+  width: 20px
+  height: 20px
+  background: url('../assets/icons/svg/profile.svg')
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: 20px 20px
 
 .header__username
   font-size: 14px

@@ -31,3 +31,13 @@ export const apiGetCurrentUser = () =>
 export const apiDeleteCurrentAccount = () => axios("/api/v3/auth/drop");
 
 export const apiActivateAccount = (path) => axios(`/api/v3${path}`);
+
+export const apiGetAccountStatus = () =>
+  axios('/api/v3/mycheck/options/account', { withCredentials: true });
+
+export const apiChangeSettings = (formData) =>
+  axios({
+    method: "post",
+    url: "/api/v3/mycheck/options/account",
+    data: formData,
+  });
