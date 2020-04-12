@@ -9,3 +9,5 @@ export const LOGIN_BY_EMAIL = "LOGIN_BY_EMAIL";
 export const RESET_USER = "RESET_USER";
 export const ACTIVATE_ACCOUNT = "ACTIVATE_ACCOUNT";
 export const LOGOUT = "LOGOUT";
+export const GET_ACCOUNT_STATUS = "GET_ACCOUNT_STATUS";
+export const CHANGE_SETTINGS = "CHANGE_SETTINGS";

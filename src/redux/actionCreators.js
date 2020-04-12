@@ -7,6 +7,8 @@ import {
   apiLoginByEmail,
   apiActivateAccount,
   apiLogout,
+  apiGetAccountStatus,
+  apiChangeSettings,
 } from "./api";
 
 export const loginByEmail = (emailAndPassword) => async (dispatch) => {
@@ -85,6 +87,28 @@ export const logout = () => async dispatch => {
   try {
     await apiLogout();
     dispatch({ type: actionTypes.LOGOUT });
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+export const getAccountStatus = () => async dispatch => {
+  try {
+    const response = await apiGetAccountStatus();
+    const { data = {} } = response;
+    dispatch({ type: actionTypes.GET_ACCOUNT_STATUS, payload: { data } });
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+export const changeSettings = formData => async dispatch => {
+  try {
+    const response = await apiChangeSettings(formData);
+    const { data } = response;
+    if (response.status === 200) {
+      dispatch({ type: actionTypes.CHANGE_SETTINGS, payload: { data } });
+    }
   } catch (err) {
     console.error(err);
   }
